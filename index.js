@@ -51,6 +51,15 @@ https://docs.google.com/forms/u/1/d/e/1FAIpQLSfwbKSBc2pzHF3AUGfGOvyauDKL0J76eXML
 
 
 var Swiper = new Swiper('.swiper-container', {
+  autoplay: {
+		delay: 3000,
+		stopOnLastSlide: false,
+		disableOnInteraction: false,
+		reverseDirection: false
+  },
+  centeredSlides: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
