@@ -301,7 +301,7 @@
         </div>
       </div>
     </section>
-    <section class="content__contact">
+    <section class="content__contact content">
       <div class="content-title-contact">
         <h2>お問い合わせ</h2>
         <p>CONTACT</p>
@@ -312,19 +312,19 @@
       <div class="form-wrapper">
         <form
         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwbKSBc2pzHF3AUGfGOvyauDKL0J76eXMLcribOb45vseM3w/formResponse" target="_self" method="POST" id="form" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="3" data-is-first-page="true">
-          <div class="box">
-            <label for="name">お名前</label>
+          <div class="form_box">
+            <label for="name">お名前<span class="label_required">必須</span></label>
             <input type="text" name="entry.1509476612" id="name" placeholder="お名前" required>
           </div>
-          <div class="box">
-            <label for="mail">メールアドレス</label>
+          <div class="form_box">
+            <label for="mail">メールアドレス<span class="label_required">必須</span></label>
             <input type="mail" name="entry.1208027638" id="mail" placeholder="メールアドレス" required>
           </div>
-          <div class="box">
-            <p class="box">お問い合わせ内容</p>
-            <textarea name="entry.982988269" id=""></textarea><!-- /# -->
+          <div class="form_box">
+            <label for="content">お問い合わせ内容<span class="label_required">必須</span></label>
+            <textarea name="entry.982988269" id="" class="content__contact__form__textarea"></textarea><!-- /# -->
           </div>
-          <input type="submit" class="submit-btn">
+          <div class="form_btn_wrap"><input type="submit" class="btn form_btn"></div>
         </form>
         <p class="end-message">お問い合わせありがとうございました</p>
         <p class="false-message">送信失敗です</p>
