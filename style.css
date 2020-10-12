@@ -482,4 +482,12 @@ margin-bottom: 0;
   width: 100%;
   text-align: center;
 }
+
+.end-message {
+  display: none;
+}
+
+.false-message {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map 

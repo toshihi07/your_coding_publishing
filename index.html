@@ -309,28 +309,27 @@
         <p>コーディングの人出が足りないとき、<br>
           あなたの力になります</p>
       </div>
-      <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfwbKSBc2pzHF3AUGfGOvyauDKL0J76eXMLcribOb45vseM3w/formResponse" target="_self" method="POST" id="my-form" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="3" data-is-first-page="true">
-        <ul>
-          <li>
-            <label for="textfield2">お名前</label>
-            <input name="entry.1443877501" type="text" required="required" id="textfield" class="g_form"
-              >
-          </li>
-          <li>
-            <label for="textfield2">メールアドレス</label>
-            <input name="entry.678686410" type="text" required="required" class="g_form" id="textfield2"
-              >
-          </li>
-          <li>
-            <label for="textfield2">お問い合わせ</label>
-            <input name="entry.530956087" type="text" required="required" class="g_form" id="textfield2"
-              >
-          </li>       
-          <li><input type="submit" class="btbt"></li>
-          </ul>
-      </form>
+      <div class="form-wrapper">
+        <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwbKSBc2pzHF3AUGfGOvyauDKL0J76eXMLcribOb45vseM3w/formResponse" target="_self" method="POST" id="form" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="3" data-is-first-page="true">
+          <div class="box">
+            <label for="name">お名前</label>
+            <input type="text" name="entry.1509476612" id="name" placeholder="お名前" required>
+          </div>
+          <div class="box">
+            <label for="mail">メールアドレス</label>
+            <input type="mail" name="entry.1208027638" id="mail" placeholder="メールアドレス" required>
+          </div>
+          <div class="box">
+            <p class="box">お問い合わせ内容</p>
+            <textarea name="entry.982988269" id=""></textarea><!-- /# -->
+          </div>
+          <input type="submit" class="submit-btn">
+        </form>
+        <p class="end-message">お問い合わせありがとうございました</p>
+        <p class="false-message">送信失敗です</p>
+      </div>
     </section>
-
     <footer>
       <div class="footer">
         <div class="footer_inner">

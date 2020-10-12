@@ -47,8 +47,26 @@ $(function () {
       });
 });
 
-https://docs.google.com/forms/u/1/d/e/1FAIpQLSfwbKSBc2pzHF3AUGfGOvyauDKL0J76eXMLcribOb45vseM3w/formResponse
-
+$('#form').submit(function (event) {
+  var formData = $('#form').serialize();
+  $.ajax({
+    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwbKSBc2pzHF3AUGfGOvyauDKL0J76eXMLcribOb45vseM3w/formResponse",
+    data: formData,
+    type: "POST",
+    dataType: "xml",
+    statusCode: {
+      0: function () {
+        // $(".end-message").slideDown();
+        // $(".submit-btn").fadeOut();
+        window.location.href = "thanks.html";
+      },
+      200: function () {
+        $(".false-message").slideDown();
+      }
+    }
+  });
+  event.preventDefault();
+});
 
 var Swiper = new Swiper('.swiper-container', {
   autoplay: {
