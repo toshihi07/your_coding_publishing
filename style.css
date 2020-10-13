@@ -439,6 +439,8 @@ margin-bottom: 0;
 
 .card__content {
   padding-bottom: 91px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__content .card:nth-of-type(2) {
@@ -550,6 +552,9 @@ margin-bottom: 0;
   border-radius: 5px;
   padding: 3%;
   font-size: 0.8rem;
+  margin: 0 auto;
+  max-width: 1030px;
+  width: 90%;
 }
 
 .content__contact__form__textarea {
@@ -616,17 +621,79 @@ margin-bottom: 0;
 }
 
 @media screen and (max-width: 1024px) {
-
+  html {
+    font-size: 12px;
+  }
+  .content-top {
+    padding-top: 150px;
+  }
+  .content__img-area {
+    width: 45%;
+    align-self: center;
+}
+  .content__has-column {
+    padding-left:20px;
+    padding-right: 20px;
+  }
 }
 
 
 @media screen and (max-width: 768px) {
-  
+  .content__text-area  {
+    align-self: center;
+  }
+  .content__text-area br {
+    display: none;
+  }
+
+  .content-title {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  .content.content-top{
+    padding: 150px 20px 0 20px;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .content__blog__wrapper {
+    padding: 0 20px;
+  }
+
+  .content-second__content figure{
+    width: 45%;
+  }
+
+  .content__price__last-text {
+    padding: 32px 0;
+  }
+
+  .content__FAQ__area {
+    margin-bottom: 32px;
+  }
+
+  .card__content {
+    padding-bottom: 32px;
+  }
+
+  .swiper-container {
+    padding-bottom: 32px !important;
+  }
+
+  .content-title-contact {
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+
+
 }
 
 
 @media screen and (max-width: 450px) {
-  
+
 }
 /*# sourceMappingURL=style.css.map 
 
