@@ -99,6 +99,85 @@ main {
   background-position: 120% -130%;
 }
 
+/* header */
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 1000 !important;
+  width: 100%;
+  background-color: black;
+  color: black;
+  padding: 20px 50px;
+  box-shadow: 0px 3px 6px #00000029;
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+
+.header .logo_area  {
+  display: flex;
+}
+
+.logo_area img {
+  width: 47px;
+}
+
+.logo_area .logo_area_text {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 47px;
+}
+
+
+.left_header {
+  display: flex;
+  justify-content: flex-start;
+  height: 20px;
+  list-style: none;
+  margin: auto 0;
+}
+
+
+.right_header {
+  list-style: none;
+  align-self: self-start;
+}
+
+.header .item {
+  margin-right: 30px;
+}
+
+.header-fixed {
+  height: 60px;
+}
+
+#nav-content {
+  display: none;
+}
+
+#nav-open,
+#nav-unshown,
+#nav-drawer {
+  display: none;
+}
+
 /* module style */
 .card {
   width: 33.333%;
@@ -180,7 +259,7 @@ main {
 margin-bottom: 0;
 }
 
-.header {
+/* .header {
   padding: 20px 0;
   box-shadow: 0px 3px 6px #00000029;
   position: fixed;
@@ -190,9 +269,14 @@ margin-bottom: 0;
 
 .header__inner {
   max-width: 1230px;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding: 0 50px;
   margin: 0 auto;
+}
+
+.header__inner__list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .header__inner__list a{
@@ -215,7 +299,7 @@ margin-bottom: 0;
 
 .header__inner__list__item {
   padding: 0 50px;
-}
+} */
 
 .footer{
   padding-top: 58px;

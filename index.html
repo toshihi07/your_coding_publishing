@@ -9,35 +9,49 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.scss">
+  <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
   <title>Your Coding</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="header__inner">
-      <nav class="header__inner__nav flex-sb">
-        <div class="header__inner__logo flex-fs">
-          <a href="#"><img src="img/codinate_logo.png" alt="">
-          </a>
-          <a href="#" class="px-3 my-auto header__inner__title">ユアコーディング</a>
+    <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+        <div class="side_logo"><a href=""><img src="img/codinate_logo.png" alt="">
+        <span>ユアコーディング</span></a>
         </div>
-        <ul class="header__inner__list flex-fs align-items-center">
-          <a href="">
-            <li class="header__inner__list__item ">特徴</li>
-          </a>
-          <a href="">
-            <li class="header__inner__list__item">価格</li>
-          </a>
-          <a href="">
-            <li class="header__inner__list__item">お問い合わせ</li>
-          </a>
-        </ul>
-        <a href="" class="btn">お問い合わせ</a>
-      </nav>
+        <nav>
+          <ul　class="carusel_card">
+            <li>
+              <a href=""><i class="xi-central-signal xi-1x"></i>
+            特徴</a></li>      
+            <li>
+              <a href=""><i class="xi-movie-o xi-1x"></i>
+            価格</a></li>     
+            <li>
+              <a href=""><i class="xi-info-o xi-1x"></i>
+            お問い合わせ</a>
+          </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <!-- /.header__innner -->
+    <a href="">
+      <div class="logo_area">
+        <img src="img/codinate_logo.png" alt="" /><span class="logo_area_text">ユアコーディング</span></div
+    ></a>
+    <ul class="left_header">
+      <a href=""><li class="item">特徴</li></a>
+      <a href=""><li class="item">価格</li></a>
+      <a href=""><li class="item">お問い合わせ</li></a>
+    </ul>
+    <ul class="right_header">
+      <a href="" class="btn">お問い合わせ</a>
+    </ul>
   </header>
   <main>
     <section class="content content-top content__has-column">
